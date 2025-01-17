@@ -11,6 +11,8 @@ export function getFirstPlanetName(data) {
   return planets[0].name;
 }
 
+console.log(getFirstPlanetName(data));
+
 
 
 // === TEST YOURSELF ===
