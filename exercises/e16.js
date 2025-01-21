@@ -9,9 +9,13 @@
  */
 
 
-export function find(array, callback) {
-  // Your code goes here...
-  
+export function find(array, condition) {
+  for (let i = 0; i < array.length; i++) {
+    if (condition(array[i])) {
+      return array[i];
+    }
+  }
+  return undefined;  
 }
 
 
