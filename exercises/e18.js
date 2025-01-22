@@ -5,13 +5,9 @@
  */
 
 export function getGreatestDiscoveryYear(data) {
-  let asteroids = data.asteroids;
-
-  let discoveryYears = asteroids
-    .map(function(asteroid) {
-      return asteroid.discoveryYear;
-    })
-    .reduce(function(acc, year) {
+  let discoveryYears = data.asteroids
+    .map(asteroid => asteroid.discoveryYear)
+    .reduce((acc, year) =>{
       if (acc[year]) {
         acc[year]++;
       } else {
