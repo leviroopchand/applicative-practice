@@ -5,10 +5,9 @@ import { data } from "../data/data";
 // Return example: ['name1', 'name2', ... , 'nameN']
 
 export function getPlanetsWithNoMoons(data) {
-let planetNoMoons = data.planets
+return data.planets
 .filter(planet => planet.moonsCount === undefined || planet.moonsCount === 0)
 .map(planet => planet.name);
-return planetNoMoons;
 }
 
 
