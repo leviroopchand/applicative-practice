@@ -1,10 +1,10 @@
-import { data } from "../data/data";
+
 
 // SPACE DATA EXERCISE 2
 // Return an array of all asteroids' names
 // Return example: ['name1', 'name2', ... , 'nameN']
 
-export function getAsteroidsNames(data) {
+export function getAsteroidNames(data) {
     return data.asteroids.map(asteroid => asteroid.name);
   }
 

@@ -1,11 +1,13 @@
-import { data } from "../data/data";
+
 
 // SPACE DATA EXERCISE 8
 // Return a Planet name by a given moon name
 // Return example: 'Planet Name'
 
 export function findPlanetNameByMoon(data, moonName) {
-  return data.planets.find(planet => planet.moons && planet.moons.includes(moonName));
+  let planets = data.planets;
+  let planet = planets.find(planet => planet.moons && planet.moons.includes(moonName));
+  return planet ? planet.name : null;
 }
 
 
